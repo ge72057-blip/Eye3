@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.eye.zoom'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.eye.zoom'
+        minSdk 26
+        targetSdk 34
+        versionCode 9
+        versionName '1.8'
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+            signingConfig signingConfigs.debug   // 用调试签名，APK 可直接安装
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_description">為全螢幕縮放提供懸浮手柄：長按並移動可即時放大；雙擊保持放大後，按住手柄移動，畫面即時跟著手指走；再雙擊恢復。</string>
+    <string name="label_zoom">放大倍數</string>
+    <string name="label_idle">閒置多久變透明</string>
+    <string name="label_fade">變透明後的不透明度</string>
+    <string name="label_size">手柄大小</string>
+    <string name="btn_close">關閉</string>
+
+    <string name="settings_subtitle">懸浮縮放手柄</string>
+    <string name="sec_status">狀態</string>
+    <string name="st_running">執行中</string>
+    <string name="st_running_desc">手柄已顯示在螢幕上，單擊它可開啟快捷設定。看不到手柄？用下面的「找回手柄」。</string>
+    <string name="st_off">無障礙權限未開啟</string>
+    <string name="st_off_desc">Eye 需要無障礙權限才能顯示手柄並放大螢幕。</string>
+    <string name="st_stuck">已開啟，但沒有在執行</string>
+    <string name="st_stuck_desc">系統裡顯示 Eye 是開著的，但它實際沒在執行，多半是被系統為了省電關掉了。請到無障礙設定裡把 Eye 關掉再重新開啟。</string>
+    <string name="btn_open_a11y">開啟無障礙設定</string>
+    <string name="btn_guide">查看開啟步驟</string>
+    <string name="btn_auto_on">自動開啟</string>
+    <string name="btn_auto_restart">重啟服務</string>
+
+    <string name="sec_restore">恢復</string>
+    <string name="restore_desc">手柄丟了、看不見，或螢幕卡在放大狀態時，點這裡一鍵恢復。</string>
+    <string name="btn_restore_handle">找回手柄</string>
+    <string name="btn_reset_all">恢復所有設定</string>
+    <string name="toast_restored">手柄已找回，找一下閃爍的藍色圓圈</string>
+    <string name="toast_not_running">Eye 還沒在執行，已清除儲存的手柄位置，請先開啟 Eye。</string>
+    <string name="dlg_reset_title">恢復所有設定？</string>
+    <string name="dlg_reset_msg">放大倍數、變透明、手柄大小和位置都會回到預設值。</string>
+    <string name="toast_reset_done">已恢復預設設定</string>
+
+    <string name="sec_adjust">調節</string>
+    <string name="adjust_hint">修改後立即生效。</string>
+
+    <string name="sec_alive">讓 Eye 不被系統殺掉</string>
+    <string name="alive_desc">很多手機為了省電會關掉背景應用，手柄就會消失。下面三件事都做一下：</string>
+    <string name="alive_battery">1. 電池：不限制</string>
+    <string name="alive_battery_ok">已允許</string>
+    <string name="alive_battery_no">尚未允許</string>
+    <string name="btn_battery">允許背景執行</string>
+    <string name="alive_autostart">2. 自動啟動</string>
+    <string name="alive_autostart_desc">會嘗試開啟手機廠商的自動啟動管理頁；打不開時會直接顯示你這台手機的手動設定步驟。</string>
+    <string name="btn_autostart">開啟自動啟動管理</string>
+    <string name="alive_lock">3. 在最近工作裡鎖定 Eye</string>
+    <string name="alive_lock_desc">開啟最近工作畫面，把 Eye 的卡片鎖住，具體操作因手機而異。</string>
+    <string name="btn_phone_steps">查看我的手機怎麼設定</string>
+    <string name="alive_repair">進階：自我修復（可選）</string>
+    <string name="alive_repair_desc">在電腦上執行一次下面的指令（手機連電腦並開啟 USB 偵錯）。之後即使系統把 Eye 關掉，你再開啟本軟體，它就能自己重新開啟。</string>
+    <string name="alive_repair_ready">自我修復已就緒。</string>
+    <string name="btn_copy_cmd">複製指令</string>
+    <string name="toast_copied">已複製</string>
+    <string name="toast_fallback">沒能直接開啟該頁面，請按顯示的步驟手動設定。</string>
+
+    <string name="sec_gestures">操作方法</string>
+    <string name="gestures_text">• 單擊：開啟快捷設定面板\n• 拖動：移動手柄\n• 長按不放再移動：即時放大，畫面跟著手指走（快慢由「跟手靈敏度」決定），放手恢復\n• 雙擊：放大並保持\n• 放大後：按住手柄並移動，同樣跟手，放手保持放大\n• 再雙擊：恢復\n• 按住期間手柄會藏在手指下面，放手後原位出現</string>
+    <string name="sec_tips">注意</string>
+    <string name="tips_text">請關閉系統內建的放大功能（無障礙 → 放大，以及它的快速鍵），否則兩者會搶觸控。</string>
+
+    <string name="guide_title">開啟 Eye</string>
+    <string name="guide_text">1. 點下方「開啟無障礙設定」。\n2. 找到「Eye」（可能在「已安裝的應用程式」或「下載的應用程式」裡）。\n3. 打開開關並確認。\n4. 開關是灰色，或提示「受限制的設定」（Android 13 以上）？點下方「允許受限制的設定」，在應用程式資訊頁點右上角 ⋮ →「允許受限制的設定」，然後重新做第 1 步。\n5. 關閉系統內建的放大功能，否則兩者會搶觸控。\n\n回到 Eye，狀態變綠、螢幕邊緣出現手柄就成功了。</string>
+    <string name="btn_allow_restricted">允許受限制的設定</string>
+
+    <string name="phone_steps_title">在你的手機上保活</string>
+    <string name="alive_note">不同系統版本的選單名稱略有差異。</string>
+    <string name="alive_generic">通用做法：設定 → 電池 → Eye → 無限制（或「不限制」），並保持 Eye 的自動啟動開關開啟。</string>
+    <string name="alive_xiaomi">小米 / 紅米 / POCO：設定 → 應用程式設定 → 應用程式管理 → Eye → 開啟「自動啟動」，省電策略選「無限制」。在最近工作裡把 Eye 卡片下拉（或長按）並點鎖。</string>
+    <string name="alive_huawei">華為 / 榮耀：設定 → 應用程式和服務 → 應用程式啟動管理 → Eye → 關掉「自動管理」，再開啟「自動啟動」「關聯啟動」「背景活動」。在最近工作裡把 Eye 卡片下拉鎖定。</string>
+    <string name="alive_oppo">OPPO / realme / 一加：設定 → 應用程式管理 → Eye → 開啟「自動啟動」，耗電管理選「允許背景執行」。在最近工作裡點卡片選單（或下拉）選擇「鎖定」。</string>
+    <string name="alive_vivo">vivo / iQOO：設定 → 電池 → 背景高耗電 → Eye → 允許；再到 i 管家 → 應用程式管理 → 自動啟動 → 開啟 Eye。在最近工作裡把 Eye 卡片下拉鎖定。</string>
+    <string name="alive_samsung">三星：設定 → 電池 → 背景使用限制 → 永不休眠的應用程式 → 加入 Eye。在最近工作裡點 Eye 圖示 →「保持開啟」。</string>
+    <string name="label_sens">跟手靈敏度</string>
+    <string name="sens_hint">靈敏度越高，手指動一點點畫面就走得越遠，不用再把手伸到螢幕邊緣。</string>
+    <string name="ball_title">懸浮球</string>
+    <string name="ball_desc">關閉後手柄不再顯示（Eye 仍在背景執行），開啟後重新顯示。</string>
+    <string name="toast_ball_pending">Eye 還沒在執行，開啟後會按這個開關生效。</string>
+    <string name="diag_title">技術細節（排查用）</string>
+</resources>
