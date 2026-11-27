@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Eye</string>
+    <string name="service_description">Floating handle for full-screen zoom. Press and hold, then move to zoom in live. Double-tap to keep the zoom, then press the handle and move: the view follows your finger. Double-tap again to restore.</string>
+    <string name="label_zoom">Zoom level</string>
+    <string name="label_idle">Fade after idle</string>
+    <string name="label_fade">Opacity when faded</string>
+    <string name="label_size">Handle size</string>
+    <string name="btn_close">Close</string>
+    <string name="fmt_zoom" translatable="false">%.1f×</string>
+    <string name="fmt_sec" translatable="false">%d s</string>
+    <string name="fmt_pct" translatable="false">%d%%</string>
+    <string name="fmt_dp" translatable="false">%d dp</string>
+
+    <string name="settings_subtitle">Floating zoom handle</string>
+    <string name="sec_status">Status</string>
+    <string name="st_running">Running</string>
+    <string name="st_running_desc">The handle is on screen. Tap it for quick settings. Can’t see it? Use “Bring back the handle” below.</string>
+    <string name="st_off">Accessibility is not turned on</string>
+    <string name="st_off_desc">Eye needs the accessibility permission to show the handle and zoom the screen.</string>
+    <string name="st_stuck">Turned on, but not running</string>
+    <string name="st_stuck_desc">The system lists Eye as on, but it isn’t running. It was probably stopped to save power. Turn Eye off and on again in Accessibility settings.</string>
+    <string name="btn_open_a11y">Open accessibility settings</string>
+    <string name="btn_guide">Step-by-step guide</string>
+    <string name="btn_auto_on">Turn on automatically</string>
+    <string name="btn_auto_restart">Restart the service</string>
+
+    <string name="sec_restore">Restore</string>
+    <string name="restore_desc">If the handle is lost or hidden, or the screen is stuck zoomed in, this puts everything back.</string>
+    <string name="btn_restore_handle">Bring back the handle</string>
+    <string name="btn_reset_all">Reset all settings</string>
+    <string name="toast_restored">Handle restored. Look for the blinking blue ring.</string>
+    <string name="toast_not_running">Eye isn’t running yet. The saved handle position was cleared. Turn Eye on first.</string>
+    <string name="dlg_reset_title">Reset all settings?</string>
+    <string name="dlg_reset_msg">Zoom level, fade, size and handle position go back to their defaults.</string>
+    <string name="toast_reset_done">Settings reset</string>
+
+    <string name="sec_adjust">Adjust</string>
+    <string name="adjust_hint">Changes apply immediately.</string>
+
+    <string name="sec_alive">Keep Eye alive</string>
+    <string name="alive_desc">Many phones stop background apps to save power, and then the handle vanishes. Do all three:</string>
+    <string name="alive_battery">1. Battery: no restrictions</string>
+    <string name="alive_battery_ok">Allowed</string>
+    <string name="alive_battery_no">Not allowed yet</string>
+    <string name="btn_battery">Allow background running</string>
+    <string name="alive_autostart">2. Auto-start</string>
+    <string name="alive_autostart_desc">Tries to open your phone maker’s auto-start page. If it can’t, it shows the manual steps for your phone.</string>
+    <string name="btn_autostart">Open auto-start manager</string>
+    <string name="alive_lock">3. Lock Eye in recent apps</string>
+    <string name="alive_lock_desc">Open the recent-apps screen and lock the Eye card. The way depends on your phone.</string>
+    <string name="btn_phone_steps">Steps for my phone</string>
+    <string name="alive_repair">Optional: self-repair</string>
+    <string name="alive_repair_desc">Run this once from a computer (phone connected, USB debugging on). After that, if the system stops Eye, opening this app turns it back on by itself.</string>
+    <string name="alive_repair_ready">Self-repair is ready.</string>
+    <string name="btn_copy_cmd">Copy command</string>
+    <string name="toast_copied">Copied</string>
+    <string name="toast_fallback">Couldn’t open that page directly. Follow the steps shown.</string>
+
+    <string name="sec_gestures">Gestures</string>
+    <string name="gestures_text">• Tap: quick settings panel\n• Drag: move the handle\n• Press and hold, then move: zoom in live and the view follows your finger (speed = Follow sensitivity); let go to restore\n• Double-tap: zoom in and keep it\n• While zoomed: press the handle and move, same following; let go to keep the zoom\n• Double-tap again: restore\n• While you hold, the handle hides under your finger and reappears when you let go</string>
+    <string name="sec_tips">Good to know</string>
+    <string name="tips_text">Turn off the system’s own magnification (Accessibility → Magnification, and its shortcuts), or the two fight over your touches.</string>
+
+    <string name="guide_title">Turn on Eye</string>
+    <string name="guide_text">1. Tap “Open accessibility settings” below.\n2. Find “Eye” (it may be under “Installed apps” or “Downloaded apps”).\n3. Switch it on and confirm.\n4. Switch greyed out, or a “restricted setting” message (Android 13 and up)? Tap “Allow restricted settings” below, then on the app info page tap ⋮ (top right) → “Allow restricted settings”, then repeat step 1.\n5. Turn off the system’s own magnification, or the two fight over touches.\n\nBack in Eye, the status turns green and the handle appears at the screen edge.</string>
+    <string name="btn_allow_restricted">Allow restricted settings</string>
+
+    <string name="phone_steps_title">Keep Eye alive on your phone</string>
+    <string name="alive_note">Menu names differ slightly between system versions.</string>
+    <string name="alive_generic">On any phone: Settings → Battery → Eye → No restrictions (or Unrestricted), and keep Eye’s auto-start switch on.</string>
+    <string name="alive_xiaomi">Xiaomi / Redmi / POCO: Settings → Apps → Manage apps → Eye → turn on Autostart and set Battery saver to No restrictions. In recent apps, pull the Eye card down (or long-press it) and tap the lock.</string>
+    <string name="alive_huawei">Huawei / Honor: Settings → Apps → App launch → Eye → turn off Manage automatically, then turn on Auto-launch, Secondary launch and Run in background. In recent apps, pull the Eye card down to lock it.</string>
+    <string name="alive_oppo">OPPO / realme / OnePlus: Settings → Apps → App management → Eye → turn on Auto-start and set Battery usage to Allow background activity. In recent apps, tap the card’s menu (or pull it down) and choose Lock.</string>
+    <string name="alive_vivo">vivo / iQOO: Settings → Battery → Background power consumption → Eye → Allow. Also i Manager → App manager → Autostart → Eye on. In recent apps, pull the Eye card down to lock it.</string>
+    <string name="alive_samsung">Samsung: Settings → Battery → Background usage limits → Never sleeping apps → add Eye. In recent apps, tap the Eye icon → Keep open.</string>
+    <string name="label_sens">Follow sensitivity</string>
+    <string name="sens_hint">Higher sensitivity: a small finger move travels farther, so you never need to reach the screen edge.</string>
+    <string name="ball_title">Floating ball</string>
+    <string name="ball_desc">Switch off to hide the handle (Eye keeps running). Switch on to show it again.</string>
+    <string name="toast_ball_pending">Eye isn’t running yet. This will apply once it is turned on.</string>
+    <string name="diag_title">Technical details (for troubleshooting)</string>
+    <string name="label_steady">Steadiness (tremor filter)</string>
+    <string name="steady_hint">Higher = steadier view when your hand shakes slightly, with a little more lag. Off = follows every tiny movement.</string>
+    <string name="off">Off</string>
+</resources>
